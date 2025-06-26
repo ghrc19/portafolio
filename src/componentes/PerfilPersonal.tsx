@@ -44,7 +44,7 @@ const PerfilPersonal: React.FC = () => {
             <div className={styles.avatarSeccion}>
               <div className={styles.avatarContenedor}>
                 <img 
-                  src="/portafolio/foto.png" 
+                  src="/foto.png" 
                   alt="Foto de perfil"
                   className={styles.avatar}
                 />
