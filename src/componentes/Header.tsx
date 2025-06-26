@@ -28,7 +28,7 @@ const Header: React.FC = () => {
     <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ''}`}>
       <nav className={styles.nav}>
         <a href="#" className={styles.logo} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <img src="/src/public/portafolio.png" alt="icono portafolio" style={{width: 32, height: 32}} />
+          <img src="/portafolio/portafolio.png" alt="icono portafolio" style={{width: 32, height: 32}} />
           <span>console.log("Proyectos en marcha");</span>
         </a>
 
