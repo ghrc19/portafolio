@@ -1,0 +1,66 @@
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: var(--fondo-toggle);
+  border: 2px solid var(--borde-toggle);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px var(--sombra-toggle);
+}
+
+.iconoContenedor {
+  position: absolute;
+  top: 2px;
+  width: 22px;
+  height: 22px;
+  background: var(--fondo-icono-toggle);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px var(--sombra-icono-toggle);
+}
+
+.claro {
+  left: 2px;
+}
+
+.oscuro {
+  left: 32px;
+}
+
+.iconoSol,
+.iconoLuna {
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.claro .iconoSol {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+  color: #f59e0b;
+}
+
+.claro .iconoLuna {
+  opacity: 0;
+  transform: rotate(180deg) scale(0.5);
+}
+
+.oscuro .iconoSol {
+  opacity: 0;
+  transform: rotate(-180deg) scale(0.5);
+}
+
+.oscuro .iconoLuna {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+  color: #60a5fa;
+}

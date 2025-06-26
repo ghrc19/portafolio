@@ -1,0 +1,217 @@
+.proyectos {
+  background: var(--fondo-seccion);
+  color: var(--texto-primario);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.tarjeta {
+  position: relative;
+  background: var(--fondo-tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--sombra-tarjeta);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 520px;
+  /* Ajusta min-height según el diseño */
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--sombra-hover);
+}
+
+.tarjetaDestacada {
+  border: 2px solid var(--primario);
+  background: var(--fondo-tarjeta);
+}
+
+.imagenContenedor {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.tarjeta:hover .imagen {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.8), rgba(59, 130, 246, 0.8));
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.4s ease;
+}
+
+.tarjeta:hover .overlay {
+  opacity: 1;
+}
+
+.botonOverlay {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.botonOverlay:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.contenido {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.titulo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--texto-primario);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.descripcion {
+  color: var(--texto-secundario);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1 1 auto;
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tecnologia {
+  background: var(--gradiente-primario);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tecnologia:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+}
+
+.acciones {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.botonAccion {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.botonPrimario {
+  background: var(--gradiente-primario);
+  color: white;
+}
+
+.botonPrimario:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.4);
+}
+
+.botonSecundario {
+  background: transparent;
+  color: var(--primario);
+  border: 2px solid var(--primario);
+}
+
+.botonSecundario:hover {
+  background: var(--primario);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.destacadoBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tarjeta {
+    margin: 0 1rem;
+  }
+  
+  .acciones {
+    flex-direction: column;
+  }
+  
+  .botonAccion {
+    width: 100%;
+  }
+}

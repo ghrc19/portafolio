@@ -1,0 +1,169 @@
+.habilidades {
+  background: var(--fondo-seccion);
+  color: var(--texto-primario);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: stretch;
+}
+
+.habilidad {
+  background: var(--fondo-tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: visible;
+  resize: none;
+  min-width: 220px;
+  min-height: 220px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.habilidad::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(30, 64, 175, 0.1), transparent);
+  transition: all 0.6s ease;
+}
+
+.habilidad:hover::before {
+  left: 100%;
+}
+
+.habilidad:hover {
+  transform: translateY(-10px);
+  background: var(--fondo-hover);
+  box-shadow: var(--sombra-hover);
+}
+
+.icono {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  background: var(--gradiente-primario);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.habilidad:hover .icono {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.4);
+}
+
+.nombre {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--texto-primario);
+}
+
+.barraProgreso {
+  width: 100%;
+  height: 8px;
+  background: var(--fondo-barra);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progreso {
+  height: 100%;
+  background: var(--gradiente-primario);
+  border-radius: 4px;
+  transition: width 1.5s ease-in-out;
+  position: relative;
+}
+
+.progreso::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.porcentaje {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--texto-secundario);
+}
+
+.proyectosUsados {
+  margin-bottom: 1rem;
+}
+
+.cantidadProyectos {
+  color: var(--primario);
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cantidadProyectos .cantidad {
+  color: var(--acento);
+  font-weight: 800;
+  margin-left: 0.5rem;
+}
+
+.divisorProyectos {
+  width: 60%;
+  height: 2px;
+  background: var(--borde);
+  margin: 0.5rem auto 1rem auto;
+  border-radius: 2px;
+}
+
+.listaProyectos {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .habilidad {
+    padding: 1.5rem;
+  }
+}
