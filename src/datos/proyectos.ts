@@ -6,9 +6,9 @@ export const proyectos: Proyecto[] = [
     titulo: "Sistema de Gestión de Trabajos Universitarios - HedSystem",
     descripcion: "Plataforma completa para llevar a cabo la gestión de trabajos universitarios, dashboards y reportes, filtrado y exportación de datos en archivo PDF.",
     tecnologias: ["JavaScript","React", "Firebase", "TypeScript", "TypeScript","Tailwind CSS", "React Hook Form"],
-    imagenUrl: "/hedsystem.png",
+    imagenUrl: "/portafolio/hedsystem.png",
     repositorioUrl: "https://github.com/ghrc19/Hed_System",
-    demoUrl: "https://ghrc19.github.io/login",
+    demoUrl: "https://ghrc19.github.io/Hed_System/",
     destacado: true
   },
   {
