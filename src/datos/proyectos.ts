@@ -8,7 +8,7 @@ export const proyectos: Proyecto[] = [
     tecnologias: ["JavaScript","React", "Firebase", "TypeScript", "TypeScript","Tailwind CSS", "React Hook Form"],
     imagenUrl: "/hedsystem.png",
     repositorioUrl: "https://github.com/ghrc19/Hed_System",
-    demoUrl: "https://mi-ecommerce-demo.com",
+    demoUrl: "https://ghrc19.github.io/login",
     destacado: true
   },
   {
