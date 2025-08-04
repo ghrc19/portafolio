@@ -16,7 +16,7 @@ export const proyectos: Proyecto[] = [
     titulo: "Bot de Discord - DJ Enigma",
     descripcion: "Bot musical profesional para Discord con gestión inteligente de colas, recomendaciones automáticas y controles interactivos para streaming de audio fluido.",
     tecnologias: ["Node.js", "API"],
-    imagenUrl: "/portafolio/djenigma.png",
+    imagenUrl: "/portafolio/dj_enigma.png",
     repositorioUrl: "https://github.com/ghrc19/DjEnigma",
     destacado: false
   },
