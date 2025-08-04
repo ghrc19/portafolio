@@ -13,13 +13,12 @@ export const proyectos: Proyecto[] = [
   },
   {
     id: 2,
-    titulo: "App de Gestión de Tareas",
-    descripcion: "Aplicación web para gestión de proyectos y tareas con colaboración en tiempo real, notificaciones y reportes avanzados.",
-    tecnologias: ["Vue.js", "Firebase", "Tailwind", "PWA"],
-    imagenUrl: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
-    repositorioUrl: "https://github.com/tu-usuario/task-manager",
-    demoUrl: "https://task-manager-demo.com",
-    destacado: true
+    titulo: "Bot de Discord - DJ Enigma",
+    descripcion: "Bot musical profesional para Discord con gestión inteligente de colas, recomendaciones automáticas y controles interactivos para streaming de audio fluido.",
+    tecnologias: ["Node.js", "API"],
+    imagenUrl: "/portafolio/djenigma.png",
+    repositorioUrl: "https://github.com/ghrc19/DjEnigma",
+    destacado: false
   },
   {
     id: 3,
