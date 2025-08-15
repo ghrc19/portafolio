@@ -56,7 +56,7 @@ const PerfilPersonal: React.FC = () => {
                 </h1>
                 <p className={styles.usuario}>@ghrc19</p>
                 <p className={styles.bio}>
-                  Soy un programador apasionado creando sistemas web y móviles, tanto personales como de pequeños negocios. Actualmente cuento con poca experiencia trabajando en entornos reales y utilizando metodologías ágiles, pero con todas las ganas de aprender y especializarme tanto como Frontend y Backend.
+                  Programador junior full-stack, con interés por el desarrollo tanto del lado del cliente como del servidor. Cada proyecto es una oportunidad para mejorar mis habilidades y crear soluciones útiles y funcionales.
                 </p>
               </div>
             </div>
